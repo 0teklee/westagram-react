@@ -1,0 +1,72 @@
+.postWrapper {
+  margin: 1rem;
+  width: 40rem;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  background: #ffffff;
+
+  .postUpper {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+    span {
+      margin-left: 1rem;
+      font-weight: 700;
+    }
+  }
+  .content {
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .caption {
+      margin: 1rem auto;
+      padding: 0 1rem;
+      line-height: 1.3;
+      font-family: "Noto Sans KR";
+      .postIcons {
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 1.5rem;
+          padding: 0 1rem 1rem 0;
+          cursor: pointer;
+        }
+        i:last-child {
+          margin-left: 28rem;
+        }
+      }
+      .captionName {
+        margin: 1rem 1rem 0.5rem 0;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .comment {
+    position: relative;
+    input {
+      all: unset;
+      width: 100%;
+      padding: 1rem 2.5rem;
+    }
+
+    .smileIcon {
+      position: absolute;
+      bottom: 0.9rem;
+      left: 0.8rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,205 @@
+@import "../../../styles/variables.scss";
+
+.LoginContainer {
+  background: #ededed;
+  .sideImageHolder {
+    display: none;
+  }
+
+  .loginSection {
+    @include flexCenter;
+
+    .loginBox {
+      @include flexCenter;
+      flex-direction: column;
+      padding: 3rem;
+      margin: 4rem;
+      background: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 2rem 0;
+      }
+
+      .loginInput {
+        @include flexCenter;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 1rem auto;
+
+        .idBox,
+        .pwBox {
+          position: relative;
+          border: none;
+          .pwPlacehd {
+            position: absolute;
+            top: 0.4rem;
+            left: 0.5rem;
+            font-size: 10px;
+          }
+
+          .pwInnerBox {
+            .pwInvisible {
+              display: none;
+            }
+            .pwVisible {
+              display: inline;
+              position: absolute;
+              cursor: pointer;
+              border-radius: 0px 5px 5px 0;
+              right: 0px;
+              width: 6rem;
+              padding: 10.5px 0;
+              font-family: "Noto Sans KR";
+            }
+
+            button:hover {
+              background: #b8b8b8;
+            }
+          }
+        }
+
+        input,
+        button {
+          width: 20rem;
+          margin-bottom: 0.5rem;
+          border-radius: 5px;
+          border: 1px solid #dddddd;
+        }
+
+        input {
+          padding: 20px 0 5px 8px;
+          font-family: Arial, Helvetica, sans-serif, serif;
+          outline: none;
+        }
+
+        input:focus {
+          background: #ffffff;
+          border: 1px solid #757575;
+        }
+
+        .buttonOff {
+          padding: 0.4rem;
+          background: #0095f6;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 600;
+          opacity: 0.5;
+        }
+
+        .buttonOn {
+          padding: 0.4rem;
+          background: #0095f6;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .idPlacehd {
+          position: absolute;
+          top: 0.4rem;
+          left: 0.5rem;
+          font-size: 10px;
+        }
+      }
+
+      .splitLine {
+        @include flexCenter;
+        flex-shrink: 0;
+        padding: 1rem;
+        font-size: 14px;
+        font-weight: 600;
+        color: #757575;
+        hr {
+          width: 100px;
+          margin: 0 1rem;
+        }
+        h3 {
+          flex: none;
+        }
+      }
+    }
+    .lowerLink {
+      div {
+        @include flexCenter;
+        margin: 20px auto;
+        a {
+          text-decoration: none;
+          text-align: center;
+          color: #005b97;
+        }
+      }
+      .snsLogin {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+    }
+    .signUp {
+      padding: 20px;
+      font-size: 1rem;
+      a {
+        margin-left: 0.5rem;
+        text-decoration: none;
+        color: #005b97;
+      }
+    }
+  }
+}
+
+footer {
+  background: #ededed;
+  .footerWrapper {
+    .footerUpper,
+    .footerLower {
+      .upperFirstRow,
+      .upperSecondRow,
+      .lowerFirstRow,
+      .lowerSecondRow {
+        div {
+          padding: 8px 8px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .footerUpper {
+      .upperFirstRow {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+    .footerLower {
+      .lowerFirstRow,
+      .lowerSecondRow {
+        display: flex;
+        justify-content: center;
+      }
+
+      .lowerSecondRow {
+        padding: 3rem 0;
+        select {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background: none;
+          border: none;
+          font-size: 12px;
+
+          cursor: pointer;
+
+          option {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+
+        select:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

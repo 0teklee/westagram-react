@@ -1,0 +1,41 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  background: #ffffff;
+
+  h1 {
+    font-family: "Dancing Script";
+    font-weight: 900;
+    padding: 1rem 1rem;
+    margin: 0 2rem;
+  }
+  input {
+    all: unset;
+    position: relative;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    border-radius: 10px;
+    background: #fafafa;
+    width: 100%;
+  }
+
+  .searchIcon {
+    position: absolute;
+    left: 12rem;
+    font-size: 1rem;
+    color: #969696;
+    cursor: pointer;
+  }
+
+  .homeIcon,
+  .planeIcon,
+  .newIcon,
+  .compassIcon,
+  .heartIcon,
+  img {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    cursor: pointer;
+  }
+}
